@@ -26,7 +26,7 @@ export const Route = createFileRoute('/api/ai/summary')({
 
         // stream summary
         const result = streamText({
-          model: openrouter.chat('z-ai/glm-4.5-air:free'),
+          model: openrouter.chat('google/gemma-3-12b-it:free'),
           system: `You are a helpful assistant that creates concise, informative summaries of web content.
 Your summaries should:
 - Be 2-3 paragraphs long
